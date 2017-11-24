@@ -27,6 +27,7 @@
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.5",
+    "react-swipeable-views": "^0.12.10",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-persist": "4.9.1",
