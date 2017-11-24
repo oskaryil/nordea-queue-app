@@ -3,7 +3,6 @@ import introTexts from '../../intro'
 
 const IntroTextsComponent = (props) => {
   const hello = introTexts.map(text => {  
-    console.log(text)
     return (
       <div>
         <p>tes</p>
