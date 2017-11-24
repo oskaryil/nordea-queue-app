@@ -47,6 +47,10 @@ function installplugin(plugin) {
   patternlab.installplugin(plugin);
 }
 
+const compileStyles = () => {
+  
+}
+
 var options = {}, // Key Value
     params = [], // Unamed Values
     arg = process.argv;
@@ -96,5 +100,8 @@ for (var i=0; i < process.argv.length; i++) {
     case 'installplugin':
       installplugin(options.plugin);
       break;
+      case 'styles':
+        compileStyles();
+        break;
   }
 }
