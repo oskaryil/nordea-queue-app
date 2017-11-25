@@ -1,20 +1,31 @@
 import axios from "axios";
 import { VERIFY_BEGIN, VERIFY_SUCCESS } from "./types";
-// import setAuthorizationToken from "./setAuthorizationToken";
+import setAuthorizationToken from "../setAuthorizationToken";
+import jwt_decode from "jwt-decode";
+import { SET_CURRENT_USER } from "./types";
 
 axios.defaults.baseURL = "http://localhost:4000/api";
 
-export const verify = (values) => async dispatch => {
+export function setCurrentUser(user) {
+  return {
+    type: SET_CURRENT_USER,
+    user
+  };
+}
+
+export const verify = values => async dispatch => {
   try {
     dispatch({ type: VERIFY_BEGIN });
     const { data } = await axios({
       method: "post",
       data: {
-        verificationCode: values.verificationCode 
+        verificationCode: values.verificationCode
       },
-			url: `/users/verifycode`,
-			withCredentials: true
+      url: `/users/verifycode`,
+      withCredentials: true
     });
+    setAuthorizationToken(data.user.token);
+    dispatch(setCurrentUser(jwt_decode(data.user.token)));
     dispatch({ type: VERIFY_SUCCESS, payload: data.user });
   } catch (err) {
     console.error(err);
