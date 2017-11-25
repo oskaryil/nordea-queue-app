@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0c74f1e-a462-4465-a34a-7ca3bb8903cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/introduction/index.js" afterPath="$PROJECT_DIR$/src/components/introduction/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppProvider.js" afterPath="$PROJECT_DIR$/src/AppProvider.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,14 +17,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/introduction/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="800">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1511616003690" expanded="true" signature="1052:1089" ph="..." />
+                <marker date="1511616043197" expanded="true" signature="1052:1089" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patternlab.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static-website/patternlab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppProvider.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppProvider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,6 +101,7 @@
         <option value="$PROJECT_DIR$/static-website/source/_patterns/02-organisms/slide~third.json" />
         <option value="$PROJECT_DIR$/static-website/source/css/partials/organisms/_slider.scss" />
         <option value="$PROJECT_DIR$/src/components/introduction/index.js" />
+        <option value="$PROJECT_DIR$/src/AppProvider.js" />
       </list>
     </option>
   </component>
@@ -146,6 +166,12 @@
               <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -154,6 +180,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="introduction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="static-website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="static-website" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="static-website" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nordea-queue-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nordea-queue-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="static-website" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="styles.scss" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -179,6 +231,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/static-website/source/_patterns/02-organisms" />
       <recent name="$PROJECT_DIR$/static-website/source/_app" />
     </key>
@@ -214,7 +267,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11016000" />
+    <option name="totallyTimeSpent" value="11212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="48" width="3216" height="1760" extended-state="6" />
@@ -263,14 +316,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static-website/source/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static-website/source/_patterns/01-molecules/slides/slide.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -290,6 +335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2000">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -463,6 +509,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -513,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static-website/patternlab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -621,8 +661,24 @@
         <state relative-caret-position="800">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1511616003690" expanded="true" signature="1052:1089" ph="..." />
+            <marker date="1511616043197" expanded="true" signature="1052:1089" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static-website/patternlab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
