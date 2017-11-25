@@ -6,5 +6,9 @@
   {
     "title": "This is the title for the second slide",
     "description": "This is the description for the second slide"
+  },
+  {
+    "title": "This is the title for the third slide",
+    "description": "This is the description for the third slide"
   }
 ]
