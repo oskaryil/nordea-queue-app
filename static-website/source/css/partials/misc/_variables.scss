@@ -1,0 +1,24 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+$colors: (
+    first: #04129D,
+    second: #00072D,
+    third: #001C55,
+    fourth: #0E6BA8,
+    fifth: #A6E1FA
+);
+
+$brand-primary: map-get($colors, first);
+
+$slider:(
+    bullets: (
+        size: 0.5rem,
+        spacing: 0.5rem
+    ),
+
+    slide: (
+        padding: 1rem
+    )
+);
