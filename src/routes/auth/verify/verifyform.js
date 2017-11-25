@@ -2,29 +2,25 @@ import { h, Component } from "preact";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
 
-class SignupForm extends Component {
-  submit(values) {
-    console.log("submit called", values);
-  }
-
+class Verifyform extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit}>
         <div>
           <Field
-            placeholder="Telefon"
-            name="phoneNumber"
+            placeholder="Verifierings kod"
+            name="verificationCode"
             component="input"
-            type="number"
+            type="string"
           />
         </div>
-        <button type="submit">Registera dig</button>
+        <button type="submit">Verify</button>
       </form>
     );
   }
 }
 
 export default reduxForm({
-  form: "signup"
-})(connect(null, null)(SignupForm));
+  form: "verify"
+})(connect(null, null)(Verifyform));
