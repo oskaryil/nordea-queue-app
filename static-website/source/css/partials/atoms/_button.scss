@@ -1,0 +1,8 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+.basic-button {
+    @extend .btn, .btn-primary;
+    border-radius: 1.2rem / 50%;
+}

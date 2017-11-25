@@ -45,6 +45,7 @@
     "node": ">=5.0"
   },
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "webpack-dev-server": "^2.7.1"
   }
 }
