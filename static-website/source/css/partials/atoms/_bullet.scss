@@ -1,0 +1,16 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+.bullet {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    background: grey;
+
+    &.current {
+        background: blue;
+    }
+}

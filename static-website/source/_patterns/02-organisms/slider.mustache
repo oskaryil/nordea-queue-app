@@ -1,0 +1,11 @@
+<div class="slider selected-{{ selectedNumber }}">
+    {{# currentSlide }}
+        {{> molecules-slide }}
+    {{/ currentSlide }}
+
+    <div class="bullets-wrapper">
+        {{# bullets }}
+            {{> atoms-bullet }}
+        {{/ bullets }}
+    </div>
+</div>
