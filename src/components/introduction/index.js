@@ -5,12 +5,12 @@ import './styles.css'
 
 export default class Intro extends Component {
   state = {
-    activeIndex: null
+    index: 0
   };
 
-  handleChange = index => {
+  handleChange = (event, value) => {
     this.setState({
-      activeIndex: index
+      index: value
     });
   };
 
@@ -22,46 +22,20 @@ export default class Intro extends Component {
 
   render() {
     const { index } = this.state;
-    //console.log(index);
-    const styles = {
-      slide: {
-        padding: 15,
-        minHeight: 100,
-        color: "red"
-      },
-      slide1: {
-        background: "#FEA900"
-      },
-      slide2: {
-        background: "#B3DC4A"
-      },
-      introSlide: {
-        backgroundColor: "#6AC0FF"
-      }
-      // intro-bullets: {
-      //   borderRadius: 50%,
-      //   backgroundColor: red;
-      // }
-    };
-
+    console.log('dada', index)
     const bullets = introTexts.map((_, i)=> {
       return (
         <span 
-          index={i} 
-          isActive={ this.state.activeIndex === i }
-          onClick={this.handleChange} style={{borderRadius: '50%'}}
-          className={
-            this.props.isActive ? 'active' : 'album'
-      }
-        >*</span>
+        onChange={this.handleChange}
+        value={index}
+        style={{borderRadius: '50%'}}
+        className={`slide-${index - i}`}>*</span>
       )
-
     })
 
-    const texts = introTexts.map((text, i) => {
-      console.log('index', index)
+    const texts = introTexts.map(text => {
       return (
-        <div className={"introSlide ${i+1}"}>
+        <div className={`intro-slide`}>
           {text.title}
           {text.description}
         </div>
@@ -69,13 +43,15 @@ export default class Intro extends Component {
     });
 
     return (
-      <div className={`slides-wrapper selected-${index}`}>
+      <div className={`slides-wrapper`}>
         <h1>Home</h1>
         <p>This is the Home component.</p>
         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
           {texts}
         </SwipeableViews>
-          <span className="bullets">{bullets}</span>
+        <div>
+          {bullets}
+        </div>
       </div>
     );
   }
