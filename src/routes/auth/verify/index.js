@@ -5,7 +5,6 @@ import Verifyform from "./verifyform";
 
 class Verify extends Component {
   submit(values) {
-    console.log('values', values)
     this.props.verify(values);
   }
   render() {
