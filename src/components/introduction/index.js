@@ -2,7 +2,7 @@ import { h, Component } from "preact";
 import SwipeableViews from "react-swipeable-views";
 import introTexts from "../../intro";
 import GetStartedBtn from "./getstartedbtn";
-import "./styles.css";
+import "../../assets/styles/styles.css";
 
 export default class Intro extends Component {
   state = {
@@ -31,21 +31,23 @@ export default class Intro extends Component {
       );
     });
 
-    const texts = introTexts.map(text => {
+    const texts = introTexts.map((text, index) => {
       return (
         <div className="slide">
           {text.title}
           {text.description}
+          {index === 2
+              ? <div className="button-wrapper"><GetStartedBtn /></div>
+              : null}
         </div>
       );
     });
 
     return (
-      <div className={`slider selected-${index}`}>
+      <div className={`slider selected-${index + 1}`}>
         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
           {texts}
         </SwipeableViews>
-        <div>{index === 2 ? <GetStartedBtn /> : null}</div>
         <div className="bullets-wrapper">{bullets}</div>
       </div>
     );

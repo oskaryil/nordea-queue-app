@@ -6,8 +6,8 @@ class GetStartedBtn extends Component {
   render() {
     return (
       <button
-        className="getStartedBtn"
-        onClick={() => this.props.redirectToNordea()}
+        className="basic-button"
+        onClick={this.props.redirectToNordea.bind(this)}
       >
         Click here to get started!
       </button>

@@ -1555,11 +1555,11 @@ select.form-control:focus::-ms-value {
   border: solid transparent;
   border-width: 1px 0; }
   .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > input.form-control-static[type="text"],
-  .input-group-sm > .form-control-static.input-group-addon, label
+  .input-group-sm > .form-control-static.input-group-addon, label.icon
   .input-group-sm > .form-control-static.icon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
   .input-group-sm > .input-group-btn > .form-control-static.basic-button, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > input.form-control-static[type="text"],
-  .input-group-lg > .form-control-static.input-group-addon, label
+  .input-group-lg > .form-control-static.input-group-addon, label.icon
   .input-group-lg > .form-control-static.icon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
   .input-group-lg > .input-group-btn > .form-control-static.basic-button {
@@ -1567,7 +1567,7 @@ select.form-control:focus::-ms-value {
     padding-left: 0; }
 
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > input[type="text"],
-.input-group-sm > .input-group-addon, label
+.input-group-sm > .input-group-addon, label.icon
 .input-group-sm > .icon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .basic-button {
@@ -1576,14 +1576,14 @@ select.form-control:focus::-ms-value {
   border-radius: 0.2rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
-.input-group-sm > select.input-group-addon:not([size]):not([multiple]), label
+.input-group-sm > select.input-group-addon:not([size]):not([multiple]), label.icon
 .input-group-sm > select.icon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.basic-button:not([size]):not([multiple]) {
   height: 1.8125rem; }
 
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > input[type="text"],
-.input-group-lg > .input-group-addon, label
+.input-group-lg > .input-group-addon, label.icon
 .input-group-lg > .icon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .basic-button {
@@ -1592,13 +1592,13 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
   border-radius: 0.3rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
-.input-group-lg > select.input-group-addon:not([size]):not([multiple]), label
+.input-group-lg > select.input-group-addon:not([size]):not([multiple]), label.icon
 .input-group-lg > select.icon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.basic-button:not([size]):not([multiple]) {
   height: 3.16667rem; }
 
-.form-group {
+.form-group, label.field {
   margin-bottom: 1rem; }
 
 .form-text {
@@ -1653,7 +1653,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-success .form-control, .has-success input[type="text"] {
   border-color: #5cb85c; }
 
-.has-success .input-group-addon, .has-success label .icon, label .has-success .icon {
+.has-success .input-group-addon, .has-success label.icon .icon, label.icon .has-success .icon {
   color: #5cb85c;
   border-color: #5cb85c;
   background-color: #eaf6ea; }
@@ -1671,7 +1671,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-warning .form-control, .has-warning input[type="text"] {
   border-color: #f0ad4e; }
 
-.has-warning .input-group-addon, .has-warning label .icon, label .has-warning .icon {
+.has-warning .input-group-addon, .has-warning label.icon .icon, label.icon .has-warning .icon {
   color: #f0ad4e;
   border-color: #f0ad4e;
   background-color: white; }
@@ -1689,7 +1689,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-danger .form-control, .has-danger input[type="text"] {
   border-color: #d9534f; }
 
-.has-danger .input-group-addon, .has-danger label .icon, label .has-danger .icon {
+.has-danger .input-group-addon, .has-danger label.icon .icon, label.icon .has-danger .icon {
   color: #d9534f;
   border-color: #d9534f;
   background-color: #fdf7f7; }
@@ -1697,60 +1697,60 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-danger .form-control-danger {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E"); }
 
-.form-inline, label {
+.form-inline, label.icon {
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
-  .form-inline .form-check, label .form-check {
+  .form-inline .form-check, label.icon .form-check {
     width: 100%; }
   @media (min-width: 576px) {
-    .form-inline label, label label {
+    .form-inline label, label.icon label {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 0; }
-    .form-inline .form-group, label .form-group {
+    .form-inline .form-group, label.icon .form-group, .form-inline label.field, label.icon label.field {
       display: flex;
       flex: 0 0 auto;
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, label .form-control, .form-inline input[type="text"], label input[type="text"] {
+    .form-inline .form-control, label.icon .form-control, .form-inline input[type="text"], label.icon input[type="text"] {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
-    .form-inline .form-control-static, label .form-control-static {
+    .form-inline .form-control-static, label.icon .form-control-static {
       display: inline-block; }
-    .form-inline .input-group, label .input-group, .form-inline label, label label {
+    .form-inline .input-group, label.icon .input-group, .form-inline label.icon, label.icon label.icon {
       width: auto; }
-    .form-inline .form-control-label, label .form-control-label {
+    .form-inline .form-control-label, label.icon .form-control-label {
       margin-bottom: 0;
       vertical-align: middle; }
-    .form-inline .form-check, label .form-check {
+    .form-inline .form-check, label.icon .form-check {
       display: flex;
       align-items: center;
       justify-content: center;
       width: auto;
       margin-top: 0;
       margin-bottom: 0; }
-    .form-inline .form-check-label, label .form-check-label {
+    .form-inline .form-check-label, label.icon .form-check-label {
       padding-left: 0; }
-    .form-inline .form-check-input, label .form-check-input {
+    .form-inline .form-check-input, label.icon .form-check-input {
       position: relative;
       margin-top: 0;
       margin-right: 0.25rem;
       margin-left: 0; }
-    .form-inline .custom-control, label .custom-control {
+    .form-inline .custom-control, label.icon .custom-control {
       display: flex;
       align-items: center;
       justify-content: center;
       padding-left: 0; }
-    .form-inline .custom-control-indicator, label .custom-control-indicator {
+    .form-inline .custom-control-indicator, label.icon .custom-control-indicator {
       position: static;
       display: inline-block;
       margin-right: 0.25rem;
       vertical-align: text-bottom; }
-    .form-inline .has-feedback .form-control-feedback, label .has-feedback .form-control-feedback {
+    .form-inline .has-feedback .form-control-feedback, label.icon .has-feedback .form-control-feedback {
       top: 0; } }
 
 .btn, .basic-button {
@@ -2235,7 +2235,7 @@ tbody.collapse.show {
 .btn-toolbar {
   display: flex;
   justify-content: flex-start; }
-  .btn-toolbar .input-group, .btn-toolbar label {
+  .btn-toolbar .input-group, .btn-toolbar label.icon {
     width: auto; }
 
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .basic-button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
@@ -2336,38 +2336,38 @@ tbody.collapse.show {
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
 
-.input-group, label {
+.input-group, label.icon {
   position: relative;
   display: flex;
   width: 100%; }
-  .input-group .form-control, label .form-control, .input-group input[type="text"], label input[type="text"] {
+  .input-group .form-control, label.icon .form-control, .input-group input[type="text"], label.icon input[type="text"] {
     position: relative;
     z-index: 2;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group .form-control:focus, label .form-control:focus, .input-group input[type="text"]:focus, label input[type="text"]:focus, .input-group .form-control:active, label .form-control:active, .input-group input[type="text"]:active, label input[type="text"]:active, .input-group .form-control:hover, label .form-control:hover, .input-group input[type="text"]:hover, label input[type="text"]:hover {
+    .input-group .form-control:focus, label.icon .form-control:focus, .input-group input[type="text"]:focus, label.icon input[type="text"]:focus, .input-group .form-control:active, label.icon .form-control:active, .input-group input[type="text"]:active, label.icon input[type="text"]:active, .input-group .form-control:hover, label.icon .form-control:hover, .input-group input[type="text"]:hover, label.icon input[type="text"]:hover {
       z-index: 3; }
 
-.input-group-addon, label .icon,
+.input-group-addon, label.icon .icon,
 .input-group-btn,
-.input-group .form-control, label .form-control,
-.input-group input[type="text"], label input[type="text"] {
+.input-group .form-control, label.icon .form-control,
+.input-group input[type="text"], label.icon input[type="text"] {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .input-group-addon:not(:first-child):not(:last-child), label .icon:not(:first-child):not(:last-child),
+  .input-group-addon:not(:first-child):not(:last-child), label.icon .icon:not(:first-child):not(:last-child),
   .input-group-btn:not(:first-child):not(:last-child),
-  .input-group .form-control:not(:first-child):not(:last-child), label .form-control:not(:first-child):not(:last-child),
-  .input-group input[type="text"]:not(:first-child):not(:last-child), label input[type="text"]:not(:first-child):not(:last-child) {
+  .input-group .form-control:not(:first-child):not(:last-child), label.icon .form-control:not(:first-child):not(:last-child),
+  .input-group input[type="text"]:not(:first-child):not(:last-child), label.icon input[type="text"]:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
-.input-group-addon, label .icon,
+.input-group-addon, label.icon .icon,
 .input-group-btn {
   white-space: nowrap;
   vertical-align: middle; }
 
-.input-group-addon, label .icon {
+.input-group-addon, label.icon .icon {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
@@ -2379,32 +2379,32 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem; }
   .input-group-addon.form-control-sm,
-  .input-group-sm > .input-group-addon, label
+  .input-group-sm > .input-group-addon, label.icon
   .input-group-sm > .icon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
-  .input-group-sm > .input-group-btn > .input-group-addon.basic-button, label
-  .input-group-sm > .input-group-btn > .basic-button.icon, label
-  .input-group-sm > .input-group-btn > .btn.icon, label .form-control-sm.icon {
+  .input-group-sm > .input-group-btn > .input-group-addon.basic-button, label.icon
+  .input-group-sm > .input-group-btn > .basic-button.icon, label.icon
+  .input-group-sm > .input-group-btn > .btn.icon, label.icon .form-control-sm.icon {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg,
-  .input-group-lg > .input-group-addon, label
+  .input-group-lg > .input-group-addon, label.icon
   .input-group-lg > .icon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
-  .input-group-lg > .input-group-btn > .input-group-addon.basic-button, label
-  .input-group-lg > .input-group-btn > .basic-button.icon, label
-  .input-group-lg > .input-group-btn > .btn.icon, label .form-control-lg.icon {
+  .input-group-lg > .input-group-btn > .input-group-addon.basic-button, label.icon
+  .input-group-lg > .input-group-btn > .basic-button.icon, label.icon
+  .input-group-lg > .input-group-btn > .btn.icon, label.icon .form-control-lg.icon {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
-  .input-group-addon input[type="radio"], label .icon input[type="radio"],
-  .input-group-addon input[type="checkbox"], label .icon input[type="checkbox"] {
+  .input-group-addon input[type="radio"], label.icon .icon input[type="radio"],
+  .input-group-addon input[type="checkbox"], label.icon .icon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:not(:last-child), label .form-control:not(:last-child), .input-group input[type="text"]:not(:last-child), label input[type="text"]:not(:last-child),
+.input-group .form-control:not(:last-child), label.icon .form-control:not(:last-child), .input-group input[type="text"]:not(:last-child), label.icon input[type="text"]:not(:last-child),
 .input-group-addon:not(:last-child),
-label .icon:not(:last-child),
+label.icon .icon:not(:last-child),
 .input-group-btn:not(:last-child) > .btn,
 .input-group-btn:not(:last-child) > .basic-button,
 .input-group-btn:not(:last-child) > .btn-group > .btn,
@@ -2417,12 +2417,12 @@ label .icon:not(:last-child),
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.input-group-addon:not(:last-child), label .icon:not(:last-child) {
+.input-group-addon:not(:last-child), label.icon .icon:not(:last-child) {
   border-right: 0; }
 
-.input-group .form-control:not(:first-child), label .form-control:not(:first-child), .input-group input[type="text"]:not(:first-child), label input[type="text"]:not(:first-child),
+.input-group .form-control:not(:first-child), label.icon .form-control:not(:first-child), .input-group input[type="text"]:not(:first-child), label.icon input[type="text"]:not(:first-child),
 .input-group-addon:not(:first-child),
-label .icon:not(:first-child),
+label.icon .icon:not(:first-child),
 .input-group-btn:not(:first-child) > .btn,
 .input-group-btn:not(:first-child) > .basic-button,
 .input-group-btn:not(:first-child) > .btn-group > .btn,
@@ -2435,7 +2435,7 @@ label .icon:not(:first-child),
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
-.form-control + .input-group-addon:not(:first-child), input[type="text"] + .input-group-addon:not(:first-child), label .form-control + .icon:not(:first-child), label input[type="text"] + .icon:not(:first-child) {
+.form-control + .input-group-addon:not(:first-child), input[type="text"] + .input-group-addon:not(:first-child), label.icon .form-control + .icon:not(:first-child), label.icon input[type="text"] + .icon:not(:first-child) {
   border-left: 0; }
 
 .input-group-btn {
@@ -6052,7 +6052,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-weight: normal;
   font-style: normal; }
 
-.fa, label.speech .icon {
+.fa, label.icon.speech .icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -6109,10 +6109,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .fa-pull-right {
   float: right; }
 
-.fa.fa-pull-left, label.speech .fa-pull-left.icon {
+.fa.fa-pull-left, label.icon.speech .fa-pull-left.icon {
   margin-right: .3em; }
 
-.fa.fa-pull-right, label.speech .fa-pull-right.icon {
+.fa.fa-pull-right, label.icon.speech .fa-pull-right.icon {
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
@@ -6122,10 +6122,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .pull-left {
   float: left; }
 
-.fa.pull-left, label.speech .pull-left.icon {
+.fa.pull-left, label.icon.speech .pull-left.icon {
   margin-right: .3em; }
 
-.fa.pull-right, label.speech .pull-right.icon {
+.fa.pull-right, label.icon.speech .pull-right.icon {
   margin-left: .3em; }
 
 .fa-spin {
@@ -7062,7 +7062,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .fa-puzzle-piece:before {
   content: ""; }
 
-.fa-microphone:before, label.speech .icon:before {
+.fa-microphone:before, label.icon.speech .icon:before {
   content: ""; }
 
 .fa-microphone-slash:before {
@@ -8372,7 +8372,8 @@ html, body {
   height: 100%; }
 
 .app-wrapper {
-  height: 100%; }
+  height: 100%;
+  padding-top: 3.5rem; }
 
 .bullet {
   display: inline-block;
@@ -8381,27 +8382,46 @@ html, body {
   height: 0.5rem;
   width: 0.5rem;
   margin: 0.5rem;
-  background: #464a4c; }
+  background: #eceeef;
+  transition: all 0.3s ease-in; }
   .bullet.current, .slider.selected-1 .bullets-wrapper .bullet:nth-child(1), .slider.selected-2 .bullets-wrapper .bullet:nth-child(2), .slider.selected-3 .bullets-wrapper .bullet:nth-child(3) {
     background: #04129D; }
 
 .basic-button {
   border-radius: 1.2rem / 50%; }
 
-label .icon {
+label.icon .icon::before {
   line-height: 1.25; }
 
 .slide {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   padding-bottom: 2.5rem;
   height: 100%; }
+  .slide .button-wrapper {
+    padding-top: 1rem;
+    text-align: center; }
 
 .slider {
-  position: relative;
-  height: 100%; }
+  position: relative; }
+  .slider,
+  .slider > :first-child,
+  .slider .react-swipeable-view-container {
+    height: 100%; }
   .slider .bullets-wrapper {
     position: absolute;
     right: 0;
     bottom: 1rem;
     left: 0;
     text-align: center; }
+
+.start-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; }

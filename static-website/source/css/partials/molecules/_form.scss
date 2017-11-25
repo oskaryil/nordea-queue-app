@@ -3,14 +3,23 @@
 ////
 
 label {
-    @extend .form-inline, .input-group;
+    &.icon {
+        @extend .form-inline, .input-group;
 
-    .icon {
-        @extend .input-group-addon;
-        line-height: 1.25;
+        .icon {
+            @extend .input-group-addon;
+
+            &::before {
+                line-height: 1.25;
+            }
+        }
+
+        &.speech .icon {
+            @extend .fa, .fa-microphone;
+        }
     }
 
-    &.speech .icon {
-        @extend .fa, .fa-microphone;
+    &.field {
+        @extend .form-group;
     }
 }
