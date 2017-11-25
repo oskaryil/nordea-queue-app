@@ -6,9 +6,9 @@
     display: inline-block;
     border: none;
     border-radius: 50%;
-    height: map-get($bullets, size);
-    width: map-get($bullets, size);
-    margin: map-get($bullets, spacing);
+    height: get-slider(bullets, size);
+    width: get-slider(bullets, size);
+    margin: get-slider(bullets, spacing);
     background: $gray;
 
     &.current {

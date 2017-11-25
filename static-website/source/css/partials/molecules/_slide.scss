@@ -3,6 +3,11 @@
 ////
 
 .slide {
-    padding: 2rem;
+    $padding: get-slider(slide, padding);
+    $bullets-height: get-slider(bullets, size)
+            + get-slider(bullets, spacing) * 2;
+
+    padding: $padding;
+    padding-bottom: $padding + $bullets-height;
     height: 100%;
 }

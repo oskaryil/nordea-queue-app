@@ -3,7 +3,10 @@
 ////
 
 @import 'bootstrap';
+@import 'sassdash';
 
+@import 'partials/misc/variables';
+@import 'partials/misc/functions';
 @import 'partials/misc/global';
 @import 'partials/atoms/all';
 @import 'partials/molecules/all';

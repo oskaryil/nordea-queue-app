@@ -6,4 +6,15 @@
     @return map-get($colors, $color-name);
 }
 
-@function bullets
+@function multiple-get($map, $keys...) {
+    $remaining-keys: _rest($keys);
+    $value: map-get($map, _first($keys));
+
+    @return if(_is-map($value),
+            multiple-get($value, $remaining-keys...),
+            $value);
+}
+
+@function get-slider($keys...) {
+    @return multiple-get($slider, $keys...);
+}

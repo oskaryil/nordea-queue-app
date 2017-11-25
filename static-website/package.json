@@ -13,6 +13,7 @@
     "globby": "^6.1.0",
     "node-sass": "^4.7.2",
     "patternlab-node": "^2.11.0",
+    "sassdash": "^0.8.2",
     "styleguidekit-assets-default": "^3.5.0",
     "styleguidekit-mustache-default": "^3.0.0",
     "webpack": "^3.5.6",
