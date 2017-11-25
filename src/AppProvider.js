@@ -1,11 +1,11 @@
-import './assets/styles.css'
-
-import React, {Component} from 'react'
-import {Provider} from 'react-redux'
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
 import store from './store'
-import {persistStore} from 'redux-persist'
+import { persistStore } from 'redux-persist'
 import Router from './router'
 import Header from './components/header'
+import './assets/styles.css'
+
 
 class AppProvider extends Component {
   render() {

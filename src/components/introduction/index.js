@@ -22,7 +22,6 @@ export default class Intro extends Component {
 
   render() {
     const { index } = this.state;
-    console.log('dada', index)
     const bullets = introTexts.map((_, i)=> {
       return (
         <span 
