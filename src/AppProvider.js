@@ -1,4 +1,4 @@
-import 'assets/styles.css'
+import './assets/styles.css'
 
 import React, {Component} from 'react'
 import {Provider} from 'react-redux'
@@ -11,7 +11,7 @@ class AppProvider extends Component {
   render() {
     return (
         <Provider store={store}>
-          <div>
+          <div className="app-wrapper">
             <Header />
             <Router />
           </div>
