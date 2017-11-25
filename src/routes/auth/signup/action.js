@@ -11,7 +11,8 @@ export const signup = (data, props) => async dispatch => {
       data: {
         phoneNumber: data.phoneNumber
       },
-      url: "/users/signup"
+			url: "/users/signup",
+			withCredentials: true
     });
     dispatch({ type: SIGNUP_SUCCESS });
     window.location.href = "/verify";

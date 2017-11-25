@@ -4,17 +4,18 @@ import { VERIFY_BEGIN, VERIFY_SUCCESS } from "./types";
 
 axios.defaults.baseURL = "http://localhost:4000/api";
 
-export const verify = (data, props) => async dispatch => {
+export const verify = (values) => async dispatch => {
   try {
     dispatch({ type: VERIFY_BEGIN });
-    await axios({
+    const { data } = await axios({
       method: "post",
       data: {
-        verificationCode: data.verificationCode 
+        verificationCode: values.verificationCode 
       },
-      url: "/users/verifycode"
+			url: `/users/verifycode`,
+			withCredentials: true
     });
-    dispatch({ type: VERIFY_SUCCESS });
+    dispatch({ type: VERIFY_SUCCESS, payload: data.user });
   } catch (err) {
     console.error(err);
   }
