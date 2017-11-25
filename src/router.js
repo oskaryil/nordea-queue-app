@@ -5,6 +5,7 @@ import Home from './routes/home';
 import Profile from './routes/profile';
 import Nordea from './routes/nordea-auth';
 import Main from './routes/main';
+import ChatbotPrep from './routes/chatbot-prep';
 
 export default props =>
   <Router>
@@ -12,4 +13,5 @@ export default props =>
     <Profile path="/profile" />
 		<Nordea path="/nordea" />
       <Main path="/main" />
+      <ChatbotPrep path="/prep" />
   </Router>

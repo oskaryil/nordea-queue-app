@@ -14,8 +14,14 @@ label {
             }
         }
 
-        &.speech .icon {
-            @extend .fa, .fa-microphone;
+        &.speech {
+            @extend .col-11, .col-md-8, .col-lg-4;
+
+            flex-basis: 0;
+
+            .icon {
+                @extend .fa, .fa-microphone;
+            }
         }
     }
 

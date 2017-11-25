@@ -1,0 +1,23 @@
+{
+  "choices": [
+    {
+      "text": "Choice 0",
+      "centered": true
+    },
+    {
+      "text": "Choice 1",
+      "centered": true
+    },
+    {
+      "text": "Choice 2",
+      "centered": true
+    }
+  ],
+
+  "input": {
+    "icon": "speech",
+    "input": {
+      "placeholder": "placeholder..."
+    }
+  }
+}

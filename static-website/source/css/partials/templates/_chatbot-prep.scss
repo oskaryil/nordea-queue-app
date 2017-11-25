@@ -2,6 +2,10 @@
 ///     Created by Davide on 11/25/17.
 ////
 
-.main-page {
+.chatbot-prep {
     @extend .row, %full-page;
+
+    .choices .basic-button {
+        margin-top: 0.5rem;
+    }
 }
