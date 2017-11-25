@@ -5,6 +5,7 @@ import SignupForm from "./signupform";
 
 class Auth extends Component {
   submit(values) {
+    console.log('values', values)
     this.props.signup(values);
   }
   render() {

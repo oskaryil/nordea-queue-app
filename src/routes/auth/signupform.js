@@ -3,10 +3,6 @@ import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
 
 class SignupForm extends Component {
-  submit(values) {
-    console.log("submit called", values);
-  }
-
   render() {
     const { handleSubmit } = this.props;
     return (
