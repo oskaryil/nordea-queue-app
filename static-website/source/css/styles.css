@@ -3851,6 +3851,52 @@ html, body {
   height: 100%;
   padding-top: 3.5rem; }
 
+.balloon-wrapper {
+  padding: 0.5rem; }
+  .balloon-wrapper.bot {
+    text-align: left; }
+    .balloon-wrapper.bot .balloon {
+      background: #04129D;
+      color: #f8f9fa; }
+      .balloon-wrapper.bot .balloon::before {
+        bottom: 0;
+        left: 0;
+        border-right-color: #04129D;
+        border-left: 0;
+        border-bottom: 0;
+        margin-left: -0.5rem; }
+  .balloon-wrapper.customer {
+    text-align: right; }
+    .balloon-wrapper.customer .balloon {
+      background: #A6E1FA; }
+      .balloon-wrapper.customer .balloon::before {
+        bottom: 0;
+        right: 0;
+        border-left-color: #A6E1FA;
+        border-right: 0;
+        border-bottom: 0;
+        margin-right: -0.5rem; }
+
+.balloon {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  max-width: 90%; }
+  @media (min-width: 768px) {
+    .balloon {
+      max-width: 75%; } }
+  @media (min-width: 992px) {
+    .balloon {
+      max-width: 60%; } }
+  .balloon::before {
+    position: absolute;
+    content: '';
+    border: 1rem solid transparent;
+    width: 0;
+    height: 0;
+    z-index: -10; }
+
 .bullet {
   display: inline-block;
   border: none;
@@ -3870,6 +3916,10 @@ html, body {
     margin-left: auto;
     margin-right: auto; }
 
+.balloons-list {
+  padding: 0;
+  list-style-type: none; }
+
 label.icon .icon::before {
   line-height: 1.25; }
 
@@ -3887,6 +3937,11 @@ label.icon.speech {
   height: 100%; }
   .slide .basic-button.centered {
     margin-top: 1rem; }
+
+.chat label.icon.speech {
+  padding: 0.3rem;
+  padding-top: 0.8rem;
+  max-width: 100%; }
 
 .slider {
   position: relative; }
