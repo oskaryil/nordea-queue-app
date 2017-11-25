@@ -8425,3 +8425,6 @@ label.icon .icon::before {
   justify-content: space-around;
   align-items: center;
   height: 100%; }
+
+body {
+  background: blue; }
