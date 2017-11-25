@@ -15,7 +15,7 @@ class SignupForm extends Component {
             type="number"
           />
         </div>
-        <button type="submit">Registera dig</button>
+        <button type="submit">Register</button>
       </form>
     );
   }
