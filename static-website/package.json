@@ -11,6 +11,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "event-hooks-webpack-plugin": "^1.0.0",
     "globby": "^6.1.0",
+    "node-sass": "^4.7.2",
     "patternlab-node": "^2.11.0",
     "styleguidekit-assets-default": "^3.5.0",
     "styleguidekit-mustache-default": "^3.0.0",
@@ -35,7 +36,8 @@
     "patternlab:liststarterkits": "node patternlab.js liststarterkits",
     "patternlab:loadstarterkit": "node patternlab.js loadstarterkit",
     "patternlab:installplugin": "node patternlab.js installplugin",
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "styles": "node patternlab.js styles"
   },
   "license": "Apache-2.0",
   "engines": {

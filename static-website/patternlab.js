@@ -2,6 +2,8 @@
 //       e.g. npm run loadstarterkit -- --kit=some-kit-name --clean
 const plConfig = require('./patternlab-config.json');
 const patternlab = require('patternlab-node')(plConfig);
+const fs = require('fs');
+const sass = require('node-sass');
 
 function getConfiguredCleanOption() {
   return plConfig.cleanPublic;
@@ -48,8 +50,16 @@ function installplugin(plugin) {
 }
 
 const compileStyles = () => {
-  
-}
+  sass.render({
+      file: 'source/css/styles.scss',
+      includePaths: ['node_modules']
+  }, (error, result) => {
+      if(!error){
+        // No errors during the compilation, write this result on the disk
+        fs.writeFile('source/css/styles.css', result.css);
+      }
+    });
+};
 
 var options = {}, // Key Value
     params = [], // Unamed Values
@@ -77,7 +87,6 @@ arg.forEach(function(element) {
 
 
 for (var i=0; i < process.argv.length; i++) {
-  
   switch (process.argv[i]) {
     case 'build':
       build();
