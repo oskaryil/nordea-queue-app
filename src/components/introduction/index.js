@@ -1,15 +1,16 @@
 import { h, Component } from "preact";
 import SwipeableViews from "react-swipeable-views";
 import introTexts from "../../intro";
+import './styles.css'
 
 export default class Intro extends Component {
   state = {
-    index: 0
+    activeIndex: null
   };
 
-  handleChange = (event, value) => {
+  handleChange = index => {
     this.setState({
-      index: value
+      activeIndex: index
     });
   };
 
@@ -34,8 +35,8 @@ export default class Intro extends Component {
       slide2: {
         background: "#B3DC4A"
       },
-      slide3: {
-        background: "#6AC0FF"
+      introSlide: {
+        backgroundColor: "#6AC0FF"
       }
       // intro-bullets: {
       //   borderRadius: 50%,
@@ -45,15 +46,22 @@ export default class Intro extends Component {
 
     const bullets = introTexts.map((_, i)=> {
       return (
-        <span onClick={() => this.handleChangeIndex(null, i)} style={{borderRadius: '50%', backgroundColor: 'red'}} className="intro-bullets">*</span>
+        <span 
+          index={i} 
+          isActive={ this.state.activeIndex === i }
+          onClick={this.handleChange} style={{borderRadius: '50%'}}
+          className={
+            this.props.isActive ? 'active' : 'album'
+      }
+        >*</span>
       )
+
     })
 
     const texts = introTexts.map((text, i) => {
-      console.log('i',i)
       console.log('index', index)
       return (
-        <div className={"intro-slide ${i+1}"}>
+        <div className={"introSlide ${i+1}"}>
           {text.title}
           {text.description}
         </div>
