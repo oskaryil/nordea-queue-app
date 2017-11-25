@@ -3,9 +3,8 @@ import { connect } from "react-redux";
 import { signup } from "./action";
 import SignupForm from "./signupform";
 
-class Auth extends Component {
+class Signup extends Component {
   submit(values) {
-    console.log('values', values)
     this.props.signup(values);
   }
   render() {
@@ -18,4 +17,4 @@ class Auth extends Component {
   }
 }
 
-export default connect(null, { signup })(Auth);
+export default connect(null, { signup })(Signup);

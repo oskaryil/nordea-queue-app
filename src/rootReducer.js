@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 // import { firstReducer } from "./routes/home/reducer";
 import { sendCode } from "./routes/nordea-redirect/reducer";
-import { userReducer } from "./routes/auth/reducer";
+import { userReducer } from "./routes/auth/signup/reducer";
 import { reducer as formReducer } from "redux-form";
 
 export default combineReducers({
