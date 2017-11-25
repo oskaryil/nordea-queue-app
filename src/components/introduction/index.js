@@ -37,7 +37,7 @@ export default class Intro extends Component {
           {text.title}
           {text.description}
           {index === 2
-              ? <div className="button-wrapper"><GetStartedBtn /></div>
+              ? <GetStartedBtn />
               : null}
         </div>
       );

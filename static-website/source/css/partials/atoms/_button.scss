@@ -5,4 +5,10 @@
 .basic-button {
     @extend .btn, .btn-primary;
     border-radius: 1.2rem / 50%;
+
+    &.centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

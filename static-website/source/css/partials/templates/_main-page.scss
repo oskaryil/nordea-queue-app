@@ -2,6 +2,10 @@
 ///     Created by Davide on 11/25/17.
 ////
 
-.start-page {
+.main-page {
     @extend %full-page;
+
+    label {
+        max-width: 80%;
+    }
 }

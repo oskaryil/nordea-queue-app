@@ -6,7 +6,7 @@ class GetStartedBtn extends Component {
   render() {
     return (
       <button
-        className="basic-button"
+        className="basic-button centered"
         onClick={this.props.redirectToNordea.bind(this)}
       >
         Click here to get started!

@@ -8371,6 +8371,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 html, body {
   height: 100%; }
 
+.start-page, .main-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; }
+
 .app-wrapper {
   height: 100%;
   padding-top: 3.5rem; }
@@ -8389,6 +8396,10 @@ html, body {
 
 .basic-button {
   border-radius: 1.2rem / 50%; }
+  .basic-button.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 label.icon .icon::before {
   line-height: 1.25; }
@@ -8402,9 +8413,8 @@ label.icon .icon::before {
   padding: 1rem;
   padding-bottom: 2.5rem;
   height: 100%; }
-  .slide .button-wrapper {
-    padding-top: 1rem;
-    text-align: center; }
+  .slide .basic-button.centered {
+    margin-top: 1rem; }
 
 .slider {
   position: relative; }
@@ -8419,12 +8429,5 @@ label.icon .icon::before {
     left: 0;
     text-align: center; }
 
-.start-page {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%; }
-
-body {
-  background: blue; }
+.main-page label {
+  max-width: 80%; }

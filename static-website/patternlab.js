@@ -50,8 +50,8 @@ function installplugin(plugin) {
 }
 
 const compileStyles = () => {
-  fs.watchFile('source/css/styles.scss', () => {
-      console.log('Compiling styles');
+  //fs.watchFile('source/css/styles.scss', () => {
+  //    console.log('Compiling styles');
       sass.render({
           file: 'source/css/styles.scss',
           includePaths: [
@@ -78,7 +78,7 @@ const compileStyles = () => {
               });
           }
       });
-  })
+  //})
 
 };
 

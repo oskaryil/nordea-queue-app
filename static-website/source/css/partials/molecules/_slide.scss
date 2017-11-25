@@ -16,8 +16,7 @@
     padding-bottom: $padding + $bullets-height;
     height: 100%;
 
-    .button-wrapper {
-        padding-top: 1rem;
-        text-align: center;
+    .basic-button.centered {
+        margin-top: 1rem;
     }
 }
