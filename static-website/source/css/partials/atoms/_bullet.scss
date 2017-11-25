@@ -9,7 +9,7 @@
     height: get-slider(bullets, size);
     width: get-slider(bullets, size);
     margin: get-slider(bullets, spacing);
-    background: $gray-lighter;
+    background: $gray-500;
     transition: all 0.3s ease-in;
 
     &.current {

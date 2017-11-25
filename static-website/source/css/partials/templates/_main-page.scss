@@ -3,9 +3,9 @@
 ////
 
 .main-page {
-    @extend %full-page;
+    @extend .row, %full-page;
 
     label {
-        max-width: 80%;
+        @extend .col-10, .col-md-6, .col-lg-4;
     }
 }
