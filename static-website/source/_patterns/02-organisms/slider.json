@@ -1,0 +1,19 @@
+{
+  "selectedNumber": "1",
+
+  "currentSlide": {
+    "content": "Just fake it <button>Olé</button>"
+  },
+
+  "bullets": [
+    {
+      "status": ""
+    },
+    {
+      "status": ""
+    },
+    {
+      "status": ""
+    }
+  ]
+}

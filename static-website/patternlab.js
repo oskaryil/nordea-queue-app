@@ -52,7 +52,7 @@ function installplugin(plugin) {
 const compileStyles = () => {
   sass.render({
       file: 'source/css/styles.scss',
-      includePaths: ['node_modules']
+      includePaths: ['node_modules/bootstrap/scss/']
   }, (error, result) => {
       if(!error){
         // No errors during the compilation, write this result on the disk
