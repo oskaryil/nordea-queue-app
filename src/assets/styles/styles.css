@@ -3884,7 +3884,7 @@ html, body {
   display: inline-block;
   border-radius: 0.6rem;
   padding: 1rem;
-  max-width: 90%; }
+  max-width: 70%; }
   @media (min-width: 768px) {
     .balloon {
       max-width: 75%; } }
@@ -3896,8 +3896,7 @@ html, body {
     content: '';
     border: 1rem solid transparent;
     width: 0;
-    height: 0;
-    z-index: -10; }
+    height: 0; }
 
 .bullet {
   display: inline-block;
