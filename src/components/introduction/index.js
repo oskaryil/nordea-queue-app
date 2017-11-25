@@ -27,15 +27,13 @@ export default class Intro extends Component {
       return (
         <span 
         onChange={this.handleChange}
-        value={index}
-        style={{borderRadius: '50%'}}
-        className={`slide-${index - i}`}>*</span>
+        className="bullet">&nbsp;</span>
       )
     })
 
     const texts = introTexts.map(text => {
       return (
-        <div className={`intro-slide`}>
+        <div className="slide">
           {text.title}
           {text.description}
         </div>
@@ -43,14 +41,12 @@ export default class Intro extends Component {
     });
 
     return (
-      <div className={`slides-wrapper`}>
-        <h1>Home</h1>
-        <p>This is the Home component.</p>
+      <div className={`slider selected-${ index }`}>
         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
-          {texts}
+            {texts}
         </SwipeableViews>
-        <div>
-          {bullets}
+        <div className="bullets-wrapper">
+            {bullets}
         </div>
       </div>
     );
