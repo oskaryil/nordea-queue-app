@@ -4,7 +4,7 @@ import store from './store'
 import { persistStore } from 'redux-persist'
 import Router from './router'
 import Header from './components/header'
-import './assets/styles.css'
+import './assets/styles/styles.css'
 
 
 class AppProvider extends Component {

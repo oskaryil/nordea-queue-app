@@ -6,6 +6,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url("../fonts/FontAwesome.otf");
+@import url("../fonts/fontawesome-webfont.eot");
+@import url("../fonts/fontawesome-webfont.svg");
+@import url("../fonts/fontawesome-webfont.ttf");
+@import url("../fonts/fontawesome-webfont.woff");
+@import url("../fonts/fontawesome-webfont.woff2");
 html {
   font-family: sans-serif;
   line-height: 1.15;
