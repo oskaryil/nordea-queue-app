@@ -3876,6 +3876,8 @@ html, body {
         border-right: 0;
         border-bottom: 0;
         margin-right: -0.5rem; }
+  .balloon-wrapper .basic-button {
+    margin-left: 1.5rem; }
 
 .balloon {
   position: relative;

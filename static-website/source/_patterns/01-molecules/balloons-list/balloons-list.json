@@ -2,7 +2,11 @@
   "messages": [
     {
       "content": "Some random shit",
-      "owner": "bot"
+      "owner": "bot",
+      "skip": {
+        "text": "Skip",
+        "centered": false
+      }
     },
     {
       "content": "Some random shit",
@@ -10,7 +14,11 @@
     },
     {
       "content": "We have a very talkative bot. But, then, it's still a bot, so it is very curt as well",
-      "owner": "bot"
+      "owner": "bot",
+      "skip": {
+        "text": "Skip",
+        "centered": false
+      }
     },
     {
       "content": "Some random shit",
@@ -18,7 +26,11 @@
     },
     {
       "content": "Some random shit",
-      "owner": "bot"
+      "owner": "bot",
+      "skip": {
+        "text": "Skip",
+        "centered": false
+      }
     },
     {
       "content": "Some random shit",
@@ -30,7 +42,11 @@
     },
     {
       "content": "Some random shit",
-      "owner": "bot"
+      "owner": "bot",
+      "skip": {
+        "text": "Skip",
+        "centered": false
+      }
     },
     {
       "content": "Some random shit but much longer, because the customer is talkative. But I also am, so, I'l tell you a story. Well, actually I no longer feel like it",
