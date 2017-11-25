@@ -6,6 +6,7 @@ import Profile from "./routes/profile";
 import Nordea from "./routes/nordea-auth";
 import NordeaFallback from "./routes/nordea-redirect";
 import Signup from "./routes/auth/signup";
+import Login from "./routes/auth/login";
 import Verify from './routes/auth/verify';
 
 export default props => (
@@ -16,6 +17,7 @@ export default props => (
     <Nordea path="/nordea" />
     <NordeaFallback path="/nordeacallback" />
     <Signup path="/signup" />
+    <Login path="/login" />
     <Verify path="/verify" />
 
   </Router>
