@@ -5,7 +5,7 @@ import Loginform from "./loginform";
 
 class Login extends Component {
   submit(values) {
-    this.props.signup(values);
+    this.props.login(values);
   }
   render() {
     return (

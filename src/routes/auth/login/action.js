@@ -1,36 +1,34 @@
-import axios from 'axios'
-import setAuthorizationToken from './setAuthorizationToken'
-import jwt_decode from 'jwt-decode'
+import axios from "axios";
+import setAuthorizationToken from "./setAuthorizationToken";
+import jwt_decode from "jwt-decode";
 
 axios.defaults.baseURL = "http://localhost:4000/api";
 
 export function setCurrentUser(user) {
   return {
-    type: 'SET_CURRENT_USER',
+    type: "SET_CURRENT_USER",
     user
-  }
+  };
 }
-
 
 export const login = (data, props) => {
   return dispatch => {
-    dispatch({ type: 'LOGIN_IS_LOADING' })
+    dispatch({ type: "LOGIN_IS_LOADING" });
     axios
-      .post(`${settings.hostname}/tokens`, data)
+      .post(`http://localhost:4000/api/users/login`, data)
       .then(res => {
-        const token = res.data
-        localStorage.setItem('token', token)
-        dispatch({ type: 'LOGIN_SUCCESS', payload: token })
-        setAuthorizationToken(token)
-        dispatch(setCurrentUser(jwt_decode(token)))
-        window.location.href = '/'
+        const token = res.data;
+        localStorage.setItem("token", token);
+        dispatch({ type: "LOGIN_SUCCESS", payload: token });
+        setAuthorizationToken(token);
+        dispatch(setCurrentUser(jwt_decode(token)));
+        window.location.href = "/";
       })
       .catch(err => {
-          console.log('error:', err)
-        
-      })
-  }
-}
+        console.log("error:", err);
+      });
+  };
+};
 
 // import axios from "axios";
 // import { SET_CURRENT_USER, SIGNUP_BEGIN, SIGNUP_SUCCESS } from "./types";
