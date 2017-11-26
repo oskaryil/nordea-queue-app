@@ -1,5 +1,4 @@
 import { Router } from "preact-router";
-import { Match } from "preact-router/match";
 import Intro from "./components/introduction";
 import Home from "./routes/home";
 import Profile from "./routes/profile";
@@ -11,6 +10,7 @@ import Login from "./routes/auth/login";
 import Signup from "./routes/auth/signup";
 import Verify from "./routes/auth/verify";
 import Start from './components/start';
+import Chatbot from './routes/chatbot';
 
 export default props => 
   <Router>
@@ -22,6 +22,7 @@ export default props =>
     <Main path="/main" />
     <ChatbotPrep path="/prep" />
     <NordeaFallback path="/nordeacallback" />
+      <Chatbot path="/chat" />
     <Signup path="/signup" />
     <Login path="/login" />
     <Verify path="/verify" />
