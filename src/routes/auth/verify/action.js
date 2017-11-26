@@ -8,6 +8,7 @@ import { route } from 'preact-router'
 axios.defaults.baseURL = "http://localhost:4000/api";
 
 export function setCurrentUser(user) {
+  console.log(user)
   return {
     type: SET_CURRENT_USER,
     user
@@ -32,6 +33,7 @@ export const verify = values => async dispatch => {
     dispatch(setCurrentUser(jwt_decode(data.user.token)));
     dispatch({ type: VERIFY_SUCCESS, payload: data.user });
     route("/nordea", true)
+
   } catch (err) {
     console.error(err);
   }
