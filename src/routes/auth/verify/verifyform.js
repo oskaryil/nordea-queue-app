@@ -6,11 +6,12 @@ class Verifyform extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
+      <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <label className="field">
+        <label>
             Verify your number:
           <Field
-            placeholder="Verifierings kod"
+            placeholder="Verification code..."
             name="verificationCode"
             component="input"
             type="text"
@@ -20,6 +21,7 @@ class Verifyform extends Component {
               Verify
           </button>
       </form>
+    </div>
     );
   }
 }

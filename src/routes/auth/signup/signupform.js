@@ -6,20 +6,23 @@ class SignupForm extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
-      <form onSubmit={handleSubmit}>
-        <label className="field">
-            Register with your phonenumber below
-          <Field
-            placeholder="Telefon"
-            name="phoneNumber"
-            component="input"
-            type="number"
-          />
-        </label>
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Register with your phonenumber below:
+            <Field
+              placeholder="Number..."
+              name="phoneNumber"
+              component="input"
+              type="number"
+            />
+          </label>
           <button className="basic-button centered" type="submit">
-              Register
+            Register
           </button>
-      </form>
+        </form>
+
+      </div>
     );
   }
 }
