@@ -1,0 +1,3 @@
+
+export const APPEND_MESSAGE = 'APPEND_MESSAGE';
+export const UPDATE_VALUES = 'UPDATE_VALUES';

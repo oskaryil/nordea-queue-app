@@ -2,8 +2,9 @@ import { Component } from 'preact';
 import { route } from 'preact-router';
 import { connect } from "react-redux";
 import TextSpeechInput from '../../components/text-speech-input';
+import { setFirstMessage } from './action';
 
-export default class ChatbotPrep extends Component {
+class ChatbotPrep extends Component {
 
     state = {
         choices: [
@@ -14,8 +15,7 @@ export default class ChatbotPrep extends Component {
     };
 
     startChatBot(firstQuestion) {
-        // reducer
-        route('/chat');
+        this.props.setFirstMessage(firstQuestion);
     }
 
     render() {
@@ -33,9 +33,13 @@ export default class ChatbotPrep extends Component {
 
             Or type your errand
 
-            <TextSpeechInput />
+            <TextSpeechInput
+                onNewValue={this.startChatBot.bind(this)}
+            />
         </main>
 
 
     }
 }
+
+export default connect(null, {setFirstMessage})(ChatbotPrep);
