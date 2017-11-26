@@ -10,7 +10,6 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <h6>Login</h6>
         <Loginform onSubmit={this.submit.bind(this)} />
       </div>
     );

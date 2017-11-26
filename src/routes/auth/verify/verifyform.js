@@ -7,15 +7,18 @@ class Verifyform extends Component {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit}>
-        <div>
+        <label className="field">
+            Verify your number:
           <Field
             placeholder="Verifierings kod"
             name="verificationCode"
             component="input"
-            type="string"
+            type="text"
           />
-        </div>
-        <button type="submit">Verify</button>
+        </label>
+          <button className="basic-button centered" type="submit">
+              Verify
+          </button>
       </form>
     );
   }

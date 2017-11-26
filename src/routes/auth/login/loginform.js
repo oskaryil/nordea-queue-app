@@ -7,15 +7,18 @@ class Loginform extends Component {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit}>
-        <div>
+        <label className="field">
+            Login
           <Field
             placeholder="Ditt mobilnummer"
             name="phoneNumber"
             component="input"
             type="number"
           />
-        </div>
-        <button type="submit">Login</button>
+        </label>
+        <button className="basic-button centered" type="submit">
+            Login
+        </button>
       </form>
     );
   }
