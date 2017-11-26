@@ -23,9 +23,6 @@ export const verify = values => async dispatch => {
       data: {
         verificationCode: values.verificationCode
       },
-      headers: {
-        header
-      },
       url: `/users/verifycode`,
       withCredentials: true
     });
