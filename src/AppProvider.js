@@ -6,13 +6,12 @@ import Router from './router'
 import Header from './components/header'
 import './assets/styles/styles.css'
 
-
 class AppProvider extends Component {
   render() {
     return (
         <Provider store={store}>
           <div className="app-wrapper">
-            {/*<Header />*/}
+            <Header />
             <Router />
           </div>
         </Provider>
