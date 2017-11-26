@@ -3,7 +3,7 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
+	background-color: #04129D !important;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: #444;
@@ -19,14 +19,19 @@ html, body {
 	height: 100%;
 }
 
-.slide-0 {
-  color: red;
+.intro-container {
+	margin: 20px;
+	text-align: center;
 }
 
-.slide-1 {
-  color: red;
+.intro-description {
+	color: #fff
 }
 
-.slide-2 {
-  color: red;
+.intro-title {
+	color: #fff;
+}
+
+.small-texts {
+	color: #FFF;
 }

@@ -297,8 +297,8 @@ fieldset[disabled] a.basic-button {
 
 .btn-primary, .basic-button {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff; }
+  background-color: #001C55;
+  border-color: #001C55; }
   .btn-primary:hover, .basic-button:hover {
     color: #fff;
     background-color: #0069d9;
@@ -3895,7 +3895,7 @@ form {
 .chatbot-prep, .main-page, .start-page {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   height: 100%; }
@@ -3962,7 +3962,7 @@ form {
   background: #adb5bd;
   transition: all 0.3s ease-in; }
   .bullet.current, .slider.selected-1 .bullets-wrapper .bullet:nth-child(1), .slider.selected-2 .bullets-wrapper .bullet:nth-child(2), .slider.selected-3 .bullets-wrapper .bullet:nth-child(3) {
-    background: #04129D; }
+    background: #001C55; }
 
 .basic-button {
   border-radius: 1.2rem / 50%; }
