@@ -10,7 +10,6 @@ class Signup extends Component {
   render() {
     return (
       <div>
-        <h6>Register with your phonenumber below</h6>
         <SignupForm onSubmit={this.submit.bind(this)} />
       </div>
     );

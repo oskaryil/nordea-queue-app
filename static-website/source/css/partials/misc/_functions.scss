@@ -1,0 +1,20 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+@function get-color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@function multiple-get($map, $keys...) {
+    $remaining-keys: _rest($keys);
+    $value: map-get($map, _first($keys));
+
+    @return if(_is-map($value),
+            multiple-get($value, $remaining-keys...),
+            $value);
+}
+
+@function get-slider($keys...) {
+    @return multiple-get($slider, $keys...);
+}

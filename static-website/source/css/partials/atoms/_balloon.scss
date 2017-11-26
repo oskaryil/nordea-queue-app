@@ -1,0 +1,77 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+.balloon-wrapper {
+    $arrow-back-length: -0.5rem;
+
+    padding: 0.5rem;
+
+    &.bot {
+        text-align: left;
+
+        .balloon {
+            $background: $brand-primary;
+
+            background: $background;
+            color: $gray-100;
+
+            &::before {
+                bottom: 0;
+                left: 0;
+                border-right-color: $background;
+                border-left: 0;
+                border-bottom: 0;
+                margin-left: $arrow-back-length;
+            }
+        }
+    }
+
+    &.customer {
+        text-align: right;
+
+        .balloon {
+            $background: get-color(fifth);
+
+            background: $background;
+
+            &::before {
+                bottom: 0;
+                right: 0;
+                border-left-color: $background;
+                border-right: 0;
+                border-bottom: 0;
+                margin-right: $arrow-back-length;
+            }
+        }
+    }
+
+    .basic-button {
+        margin-left: 1.5rem;
+    }
+}
+
+.balloon {
+    position: relative;
+    display: inline-block;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    max-width: 90%;
+
+    @include media-breakpoint-up(md) {
+        max-width: 75%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 60%;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        border: 1rem solid transparent;
+        width: 0;
+        height: 0;
+        z-index: -10;
+    }
+}

@@ -4,13 +4,15 @@
 
 .bullet {
     display: inline-block;
-    height: 0.5rem;
-    width: 0.5rem;
     border: none;
     border-radius: 50%;
-    background: grey;
+    height: get-slider(bullets, size);
+    width: get-slider(bullets, size);
+    margin: get-slider(bullets, spacing);
+    background: $gray-500;
+    transition: all 0.3s ease-in;
 
     &.current {
-        background: blue;
+        background: $brand-primary;
     }
 }

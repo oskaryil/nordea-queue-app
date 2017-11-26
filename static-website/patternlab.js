@@ -50,15 +50,36 @@ function installplugin(plugin) {
 }
 
 const compileStyles = () => {
-  sass.render({
-      file: 'source/css/styles.scss',
-      includePaths: ['node_modules/bootstrap/scss/']
-  }, (error, result) => {
-      if(!error){
-        // No errors during the compilation, write this result on the disk
-        fs.writeFile('source/css/styles.css', result.css);
-      }
-    });
+  //fs.watchFile('source/css/styles.scss', () => {
+  //    console.log('Compiling styles');
+      sass.render({
+          file: 'source/css/styles.scss',
+          includePaths: [
+              'node_modules/bootstrap/scss/',
+              'node_modules/sassdash/scss/',
+              'node_modules/font-awesome/scss/'
+          ]
+      }, (error, result) => {
+          if(error) {
+              console.log(error);
+          }
+          else {
+              fs.writeFile('source/css/styles.css', result.css,
+                  (err) => {
+                    if (err) {
+                      console.log('Could not write to styles to patternlab');
+                    }
+                    fs.writeFile('../src/assets/styles/styles.css', result.css,
+                        (err) => {
+                          if (err) {
+                              console.log('Could not write to styles to react');
+                          }
+                        });
+              });
+          }
+      });
+  //})
+
 };
 
 var options = {}, // Key Value

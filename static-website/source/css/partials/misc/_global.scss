@@ -1,0 +1,25 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+html, body {
+    height: 100%
+}
+
+form {
+    padding: 1rem;
+}
+
+%full-page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+}
+
+.app-wrapper {
+    height: 100%;
+    padding-top: 3.5rem;
+}

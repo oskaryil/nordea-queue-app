@@ -1,0 +1,31 @@
+////
+///     Created by Davide on 11/25/17.
+////
+
+label {
+    &.icon {
+        @extend .form-inline, .input-group;
+
+        .icon {
+            @extend .input-group-addon;
+
+            &::before {
+                line-height: 1.25;
+            }
+        }
+
+        &.speech {
+            @extend .col-11, .col-md-8, .col-lg-4;
+
+            flex-basis: 0;
+
+            .icon {
+                @extend .fa, .fa-microphone;
+            }
+        }
+    }
+
+    &.field {
+        @extend .form-group;
+    }
+}

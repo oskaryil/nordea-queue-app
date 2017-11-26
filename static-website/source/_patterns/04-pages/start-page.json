@@ -1,0 +1,13 @@
+{
+  "buttons": [
+    {
+      "text": "Login"
+    },
+    {
+      "text": "Skip login"
+    },
+    {
+      "text": "New customer"
+    }
+  ]
+}

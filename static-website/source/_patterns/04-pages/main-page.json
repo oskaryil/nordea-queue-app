@@ -1,0 +1,13 @@
+{
+  "input": {
+    "icon": "speech",
+    "input": {
+      "placeholder": "placeholder..."
+    }
+  },
+
+  "button": {
+    "text": "I just want to be in the queue",
+    "centered": true
+  }
+}

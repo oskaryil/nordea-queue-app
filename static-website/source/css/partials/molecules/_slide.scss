@@ -3,6 +3,20 @@
 ////
 
 .slide {
-    padding: 2rem;
+    $padding: get-slider(slide, padding);
+    $bullets-height: get-slider(bullets, size)
+            + get-slider(bullets, spacing) * 2;
+
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: $padding;
+    padding-bottom: $padding + $bullets-height;
     height: 100%;
+
+    .basic-button.centered {
+        margin-top: 1rem;
+    }
 }

@@ -4,9 +4,14 @@
 
 .slider {
     position: relative;
-    height: 100%;
 
-    @each $k in 1 2 3 {
+    &,
+    & > :first-child,
+    & .react-swipeable-view-container {
+        height: 100%;
+    }
+
+    @for $k from 1 through get-slider(slides-count) {
         &.selected-#{$k} {
             .bullets-wrapper .bullet:nth-child(#{$k}) {
                 @extend .current;
@@ -17,7 +22,7 @@
     .bullets-wrapper {
         position: absolute;
         right: 0;
-        bottom: 1rem;
+        bottom: get-slider(slide, padding);
         left: 0;
         text-align: center;
     }

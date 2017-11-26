@@ -7,15 +7,18 @@ class SignupForm extends Component {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit}>
-        <div>
+        <label className="field">
+            Register with your phonenumber below
           <Field
             placeholder="Telefon"
             name="phoneNumber"
             component="input"
             type="number"
           />
-        </div>
-        <button type="submit">Register</button>
+        </label>
+          <button className="basic-button centered" type="submit">
+              Register
+          </button>
       </form>
     );
   }

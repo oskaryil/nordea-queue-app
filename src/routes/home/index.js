@@ -1,7 +1,8 @@
 import { h, Component } from 'preact';
+import { connect } from 'react-redux'
 import style from './style';
 
-export default class Home extends Component {
+class Home extends Component {
 	render() {
 		return (
 			<div class={style.home}>
@@ -11,3 +12,5 @@ export default class Home extends Component {
 		);
 	}
 }
+
+export default connect(null, null)(Home)

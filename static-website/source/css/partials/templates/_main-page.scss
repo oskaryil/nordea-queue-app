@@ -1,3 +1,7 @@
 ////
 ///     Created by Davide on 11/25/17.
 ////
+
+.main-page {
+    @extend .row, %full-page;
+}

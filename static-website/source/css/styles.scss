@@ -2,9 +2,18 @@
 ///     Created by Davide on 11/25/17.
 ////
 
-@import 'bootstrap';
+@import 'bootstrap-reboot';
+@import 'buttons';
+@import 'forms';
+@import 'grid';
+@import 'input-group';
+@import 'font-awesome';
+@import 'sassdash';
 
-@import 'partials/global';
+@import 'partials/misc/variables';
+@import 'partials/misc/functions';
+@import 'partials/misc/global';
 @import 'partials/atoms/all';
 @import 'partials/molecules/all';
 @import 'partials/organisms/all';
+@import 'partials/templates/all';

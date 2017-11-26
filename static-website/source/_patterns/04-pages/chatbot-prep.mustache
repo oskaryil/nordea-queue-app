@@ -1,0 +1,15 @@
+<main class="chatbot-prep">
+    Why are you here?
+
+    <section class="choices">
+        {{# choices }}
+            {{> atoms-button }}
+        {{/ choices }}
+    </section>
+
+    Or type your errand
+
+    {{# input }}
+        {{> molecules-icon-text-input }}
+    {{/ input }}
+</main>

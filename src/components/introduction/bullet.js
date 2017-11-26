@@ -1,5 +1,5 @@
 import { h, Component } from "preact";
-import './styles.css'
+import '../../assets/styles/styles.css'
 
 
 export default class Bullet extends Component {

@@ -10,7 +10,6 @@ class Verify extends Component {
   render() {
     return (
       <div>
-        <h6>Verify your number:</h6>
         <Verifyform onSubmit={this.submit.bind(this)} />
       </div>
     );

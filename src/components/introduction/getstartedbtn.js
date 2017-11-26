@@ -1,16 +1,16 @@
 import { h, Component } from "preact";
 import { connect } from "react-redux";
 import { redirectToNordea } from "../../routes/nordea-auth/actions";
+import { Link } from "preact-router/match";
 
 class GetStartedBtn extends Component {
   render() {
     return (
-      <button
-        className="getStartedBtn"
-        onClick={() => this.props.redirectToNordea()}
-      >
-        Click here to get started!
-      </button>
+      <Link href="/start">
+        <button className="basic-button centered">
+          Click here to get started!
+        </button>
+      </Link>
     );
   }
 }
