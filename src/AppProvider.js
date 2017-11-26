@@ -11,7 +11,7 @@ class AppProvider extends Component {
     return (
         <Provider store={store}>
           <div className="app-wrapper">
-            {/*<Header />*/}
+            <Header />
             <Router />
           </div>
         </Provider>
