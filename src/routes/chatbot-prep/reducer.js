@@ -1,13 +1,13 @@
 import update from 'immutability-helper';
 import { SET_FIRST_MESSAGE } from './types';
-import { APPEND_MESSAGE, UPDATE_VALUES } from '../chatbot/types';
+import { APPEND_MESSAGE, MAKE_SUMMARY, UPDATE_VALUES } from '../chatbot/types';
 
 const INITIAL_STATE = {
     messages: [],
     step: null,
     values: {
         currency: null,
-        amount: null,
+        number: null,
         account: null
     }
 };
@@ -38,7 +38,18 @@ export default (state = INITIAL_STATE, action) => {
         case UPDATE_VALUES:
             return update(state, {
                 [action.valueName]: {$set: action.valueValue},
-                step: action.step
+                step: {$set: action.step}
+            });
+
+        case MAKE_SUMMARY:
+            console.log(state);
+            return update(state, {
+                messages: {$push: [
+                    {
+                        content: `You want to withdraw ${ state.number } ${ state.currency } from account ${ state.account }`,
+                        owner: 'bot'
+                    }
+                ]}
             });
 
         default:

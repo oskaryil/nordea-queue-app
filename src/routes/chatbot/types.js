@@ -1,3 +1,5 @@
 
 export const APPEND_MESSAGE = 'APPEND_MESSAGE';
 export const UPDATE_VALUES = 'UPDATE_VALUES';
+export const MAKE_SUMMARY = 'MAKE_SUMMARY';
+
