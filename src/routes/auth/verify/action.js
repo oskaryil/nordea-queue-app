@@ -7,6 +7,7 @@ import { SET_CURRENT_USER } from "./types";
 axios.defaults.baseURL = "http://localhost:4000/api";
 
 export function setCurrentUser(user) {
+  console.log(user)
   return {
     type: SET_CURRENT_USER,
     user
