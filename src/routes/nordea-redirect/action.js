@@ -12,11 +12,12 @@ export const sendCode = code => async dispatch => {
 		dispatch({ type: SEND_CODE });
 		const { data } = await axios({
 			url: '/nordea/auth',
+			method: 'post',
 			data: {
 				accessCode: code	
 			},
 			headers: {
-				'Authorization': `JWT ${accessToken}`
+				'Authorization': accessToken
 			} });
 		dispatch({
       type: SEND_CODE_SUCCESS

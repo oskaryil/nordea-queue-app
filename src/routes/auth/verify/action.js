@@ -27,7 +27,7 @@ export const verify = values => async dispatch => {
       withCredentials: true
     });
     setAuthorizationToken(data.user.token);
-    dispatch(setCurrentUser(jwt_decode(data.user.token)));
+		localStorage.setItem('token', data.user.token);
     dispatch({ type: VERIFY_SUCCESS, payload: data.user });
     route("/nordea", true)
 
