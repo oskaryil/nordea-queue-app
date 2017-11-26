@@ -6,20 +6,22 @@ class Loginform extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
-      <form onSubmit={handleSubmit}>
-        <label className="field">
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <label>
             Login
-          <Field
-            placeholder="Ditt mobilnummer"
-            name="phoneNumber"
-            component="input"
-            type="number"
-          />
-        </label>
-        <button className="basic-button centered" type="submit">
+            <Field
+              placeholder="Ditt mobilnummer"
+              name="phoneNumber"
+              component="input"
+              type="number"
+            />
+          </label>
+          <button className="basic-button centered" type="submit">
             Login
-        </button>
-      </form>
+          </button>
+        </form>
+      </div>
     );
   }
 }

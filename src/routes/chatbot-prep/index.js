@@ -13,6 +13,7 @@ export default class ChatbotPrep {
 
     render() {
         return <main className="chatbot-prep">
+						<h1>Nordea Queue</h1>
             Why are you here?
 
             <section className="choices">{

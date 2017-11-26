@@ -3962,10 +3962,10 @@ form {
   background: #adb5bd;
   transition: all 0.3s ease-in; }
   .bullet.current, .slider.selected-1 .bullets-wrapper .bullet:nth-child(1), .slider.selected-2 .bullets-wrapper .bullet:nth-child(2), .slider.selected-3 .bullets-wrapper .bullet:nth-child(3) {
-    background: #001C55; }
+    background: #FFF; }
 
 .basic-button {
-  border-radius: 1.2rem / 50%; }
+  }
   .basic-button.centered {
     display: block;
     margin-left: auto;

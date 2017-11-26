@@ -6,7 +6,7 @@ html, body {
 	background-color: #04129D !important;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
-	color: #fff !important;
+	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -34,12 +34,4 @@ html, body {
 
 .small-texts {
 	color: #FFF;
-}
-
-label {
-	color: #fff;
-}
-
-.form-container {
-	text-align: center;
 }

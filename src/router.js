@@ -14,9 +14,8 @@ import Start from './components/start';
 
 export default props => 
   <Router>
-    <Home path="/" />
-    <Start path="/start" />
     <Intro path="/intro" />
+    <Start path="/start" />
     <Profile path="/profile" />
     <Nordea path="/nordea" />
     <Main path="/main" />

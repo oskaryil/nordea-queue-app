@@ -1,4 +1,5 @@
 import axios from "axios";
+import { route } from 'preact-router';
 import config from "../../config/config.js";
 
 import { SEND_CODE, SEND_CODE_SUCCESS, SEND_CODE_FAIL } from './types';
@@ -22,6 +23,7 @@ export const sendCode = code => async dispatch => {
 		dispatch({
       type: SEND_CODE_SUCCESS
     });
+		route('/prep', true);
   } catch (err) {
 		dispatch({ type: SEND_CODE_FAIL, payload: err.message });
 		console.error(err);
