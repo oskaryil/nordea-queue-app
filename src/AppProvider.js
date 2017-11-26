@@ -3,7 +3,6 @@ import { Provider } from 'react-redux'
 import store from './store'
 import { persistStore } from 'redux-persist'
 import Router from './router'
-import Header from './components/header'
 import './assets/styles/styles.css'
 
 class AppProvider extends Component {
@@ -11,7 +10,6 @@ class AppProvider extends Component {
     return (
         <Provider store={store}>
           <div className="app-wrapper">
-            <Header />
             <Router />
           </div>
         </Provider>

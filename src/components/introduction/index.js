@@ -33,9 +33,9 @@ export default class Intro extends Component {
 
     const texts = introTexts.map((text, index) => {
       return (
-        <div className="slide">
-          {text.title}
-          {text.description}
+        <div className="intro-container">
+          <h2 className="intro-title">{text.title}</h2>
+          <p className="intro-description">{text.description}</p>
           {index === 2
               ? <GetStartedBtn />
               : null}
