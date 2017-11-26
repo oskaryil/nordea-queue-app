@@ -3,6 +3,7 @@ import { VERIFY_BEGIN, VERIFY_SUCCESS } from "./types";
 import setAuthorizationToken from "../setAuthorizationToken";
 import jwt_decode from "jwt-decode";
 import { SET_CURRENT_USER } from "./types";
+import { route } from 'preact-router'
 
 axios.defaults.baseURL = "http://localhost:4000/api";
 
@@ -28,6 +29,7 @@ export const verify = values => async dispatch => {
     setAuthorizationToken(data.user.token);
     dispatch(setCurrentUser(jwt_decode(data.user.token)));
     dispatch({ type: VERIFY_SUCCESS, payload: data.user });
+    route('/nordea', true)
   } catch (err) {
     console.error(err);
   }

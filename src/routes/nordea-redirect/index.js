@@ -13,4 +13,4 @@ class NordeaFallback extends Component {
   }
 }
 
-export default (null, {sendCode})(NordeaFallback)
+export default connect(null, {sendCode})(NordeaFallback)
