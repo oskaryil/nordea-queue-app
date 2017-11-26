@@ -3909,19 +3909,20 @@ form {
   .balloon-wrapper.bot {
     text-align: left; }
     .balloon-wrapper.bot .balloon {
-      background: #04129D;
+      background: #0E6BA8;
       color: #f8f9fa; }
       .balloon-wrapper.bot .balloon::before {
         bottom: 0;
         left: 0;
-        border-right-color: #04129D;
+        border-right-color: #0E6BA8;
         border-left: 0;
         border-bottom: 0;
         margin-left: -0.5rem; }
   .balloon-wrapper.customer {
     text-align: right; }
     .balloon-wrapper.customer .balloon {
-      background: #A6E1FA; }
+      background: #A6E1FA;
+      color: black; }
       .balloon-wrapper.customer .balloon::before {
         bottom: 0;
         right: 0;
@@ -3938,9 +3939,6 @@ form {
   border-radius: 0.6rem;
   padding: 1rem;
   max-width: 70%; }
-  @media (min-width: 768px) {
-    .balloon {
-      max-width: 75%; } }
   @media (min-width: 992px) {
     .balloon {
       max-width: 60%; } }

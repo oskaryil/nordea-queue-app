@@ -37,7 +37,9 @@ export default (state = INITIAL_STATE, action) => {
 
         case UPDATE_VALUES:
             return update(state, {
-                [action.valueName]: {$set: action.valueValue},
+                values: {
+                    [action.valueName]: {$set: action.valueValue}
+                },
                 step: {$set: action.step}
             });
 
@@ -46,7 +48,7 @@ export default (state = INITIAL_STATE, action) => {
             return update(state, {
                 messages: {$push: [
                     {
-                        content: `You want to withdraw ${ state.number } ${ state.currency } from account ${ state.account }`,
+                        content: `You want to withdraw ${ state.values.number } ${ state.values.currency } from account ${ state.values.account }`,
                         owner: 'bot'
                     }
                 ]}
